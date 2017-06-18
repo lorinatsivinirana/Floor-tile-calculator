@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Weekly Quotes</title>
+		<title>Floor tile calculator</title>
 		<style>
 			body {
 				font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -26,8 +26,35 @@
 		<script src="popup.js"></script>
 	</head>
 	<body>
-		<div id="quote" ></div>
-		<div id="author" ></div>
+	<form action="/action_page.php">
+  Room size:<br>
+    <select>
+  <option value="unit">Unit</option>
+  <option value="cm">cm</option>
+  <option value="m">m</option>
+  <option value="inch">in</option>
+  <option value="feet">ft</option>
+  <option value="yards">yd</option>
+  </select>
+  <input type="text" name="rsizel" value="length">
+  <input type="text" name="rsizew" value="width">
+  <br>
+  Tile size:<br>
+  <select>
+  <option value="unit">Unit</option>
+  <option value="cm">cm</option>
+  <option value="inch">inch</option>
+  </select>
+   <br>
+  Unit price:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+
 	</body>
 </html>
 
