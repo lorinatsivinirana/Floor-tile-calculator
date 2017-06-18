@@ -1,0 +1,15 @@
+{
+  "appName": {
+    "message": "Floor tile calculator",
+    "description": "application title"
+  },
+  "appDesc": {
+    "message": "This app calculate the number of tiles needed and price for given room", 
+    "description":"Description in chrome store"
+  },
+  "appAction": {
+    "message": "Floor tile calculator", 
+    "description":"tooltip"
+  }
+}
+
