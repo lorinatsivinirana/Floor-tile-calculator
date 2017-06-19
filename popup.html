@@ -36,8 +36,8 @@
   <option value="feet">ft</option>
   <option value="yards">yd</option>
   </select>
-  <input type="number" name="rsizel" value="length">
-  <input type="number" name="rsizew" value="width">
+  <input type="number" min="0" name="rsizel" value="length">
+  <input type="number" min="0" name="rsizew" value="width">
   <br>
   Tile size:<br>
   <select>
@@ -45,6 +45,26 @@
   <option value="cm">cm</option>
   <option value="inch">inch</option>
   </select>
+  <select>
+  <option value="unit">Size</option>
+  <option value="cm">10x10</option>
+  <option value="m">20x20</option>
+  <option value="inch">30x30</option>
+  <option value="feet">35x35</option>
+  <option value="yards">22,5x45</option>
+   <option value="unit">25x45</option>
+  <option value="cm">45x45</option>
+  <option value="m">10x60</option>
+  <option value="inch">30x60</option>
+  <option value="feet">60x60</option>
+  <option value="yards">75x75</option>
+   <option value="unit">10x90</option>
+  <option value="cm">22,5x90</option>
+  <option value="m">45x90</option>
+  <option value="inch">20x120</option>
+  <option value="feet">30x120</option>
+  <option value="yards">60x120</option>
+  </select> 
    <br>
   Unit price:<br>
   <input type="number" min="0" name="uprice" value="0">
