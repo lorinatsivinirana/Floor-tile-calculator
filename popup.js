@@ -1,9 +1,9 @@
 window.onload = function() {
-document.getElementById("btnCheck").addEventListener("click",handleClick).value;
+document.getElementById("btnCheck").addEventListener("click",handleClick);
 
 function handleClick(){
-var roomsizelength = document.getElementById("rsizel");
-var roomsizewidth = document.getElementById("rsizew");
+var roomsizelength = document.getElementById("rsizel").value;
+var roomsizewidth = document.getElementById("rsizew").value;
 var roomdimension = 0;
 roomdimension = roomsizelength*roomsizewidth;
 
