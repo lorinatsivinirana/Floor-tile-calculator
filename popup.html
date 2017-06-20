@@ -36,15 +36,15 @@
   <option value="feet">ft</option>
   <option value="yards">yd</option>
   </select>
-  <input type="number" method="post" min="0" id="rsizel" value="length">
-  <input type="number" method="post" min="0" id="rsizew" value="width">
+  <input type="number"  min="0" id="rsizel" value="length">
+  <input type="number"  min="0" id="rsizew" value="width">
   <br>
   Tile size:<br>
   <select>
   <option value="unit">Unit</option>
   <option value="cm">cm</option>
   </select>
-  <select>
+  <select id="tsize">
   <option value="size">Size</option>
   <option value="100">10x10</option>
   <option value="400">20x20</option>
@@ -66,12 +66,16 @@
   </select> 
    <br>
   Unit price:<br>
-  <input type="number" min="0" name="uprice" value="0">
+  <input type="number" min="0" id="uprice" value="0">
   <br><br>
   <input type="submit" id="btnCheck" value="Calculate">
 </form> 
+<p>Result:</p>
+<hr>
+<div id="tnumber"></div>
+<hr>
+<div id="tprice" ></div>
 
-<p>Click button to calculate.</p>
 
 
 	</body>
