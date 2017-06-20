@@ -7,6 +7,6 @@ var roomsizewidth = document.getElementById("rsizew");
 var roomdimension = roomsizelength*roomsizewidth;
 
 	//when button is clicked, do stuff here
-window.alert("result");
+window.alert(roomdimension);
 };
 }
