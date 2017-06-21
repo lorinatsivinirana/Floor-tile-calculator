@@ -13,8 +13,8 @@ var totalprice = tilenumber*unitprice;
 el1 = document.getElementById('tnumber');
 el2 = document.getElementById('tprice');
 
-el1.innerHTML = '#Tiles: ' + tilenumber;
-el2.innerHTML = '#Price: ' + totalprice;
+el1.innerHTML = '#Tiles: ' + Math.round(tilenumber);
+el2.innerHTML = '#Price: ' + Math.round(totalprice);
 
 	//when button is clicked, do stuff here
 //window.alert(totalprice);
