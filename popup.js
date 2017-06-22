@@ -18,7 +18,9 @@ el2.innerHTML = '#Price: ' + Math.round(totalprice);
 
 	//when button is clicked, do stuff here
 //window.alert(totalprice);
-
 };
 document.getElementById("btnCheck").addEventListener("click",handleClick);
+document.getElementById('tunit').addEventListener('change', function() {
+
+});
 }
