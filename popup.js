@@ -10,17 +10,17 @@ var roomdimension = roomsizelength*roomsizewidth;
 var tilenumber = roomdimension/tilesize;
 var totalprice = tilenumber*unitprice;
 
-el1 = document.getElementById('tnumber');
-el2 = document.getElementById('tprice');
+el1 = document.getElementById("tnumber");
+el2 = document.getElementById("tprice");
 
-el1.innerHTML = '#Tiles: ' + Math.round(tilenumber);
-el2.innerHTML = '#Price: ' + Math.round(totalprice);
+el1.innerHTML = "#Tiles: " + Math.round(tilenumber);
+el2.innerHTML = "#Price: " + Math.round(totalprice);
 
 	//when button is clicked, do stuff here
 //window.alert(totalprice);
 };
 document.getElementById("btnCheck").addEventListener("click",handleClick);
-document.getElementById('tunit').addEventListener('change', function() {
+document.getElementById("tunit").addEventListener("change", function() {
 
 });
 }
