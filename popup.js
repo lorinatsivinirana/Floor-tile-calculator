@@ -19,8 +19,20 @@ el2.innerHTML = "#Price: " + Math.round(totalprice);
 	//when button is clicked, do stuff here
 //window.alert(totalprice);
 };
-document.getElementById("btnCheck").addEventListener("click",handleClick);
-document.getElementById("tunit").addEventListener("change", function() {
 
-});
+function tileMenu(){
+if (this.value == "cm") {
+document.getElementById('tsize').hidden = false;
+document.getElementById('tsize2').hidden = true;
+} else if (this.value == "inch"){
+document.getElementById('tsize2').hidden = false;
+document.getElementById('tsize').hidden = true;
+}
+else {
+document.getElementById('tsize2').hidden = true;
+document.getElementById('tsize').hidden = true;
+}	
+};	
+document.getElementById("btnCheck").addEventListener("click",handleClick);
+document.getElementById("tunit").addEventListener("change",tileMenu);
 }
