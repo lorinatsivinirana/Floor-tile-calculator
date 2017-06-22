@@ -40,10 +40,12 @@
   <input type="number"  min="0" id="rsizew" value="width">
   <br>
   Tile size:<br>
-
-  <div class="width-qrtr">
-  <label>cm</label>
-  <select id="tsize">
+  <select id="tunit">
+  <option value="unit">Unit</option>
+  <option value="cm">cm</option>
+  <option value="inch">in</option>
+  </select>
+  <select id="tsize" hidden="true">
   <option value="size">Size</option>
   <option value="100">10x10</option>
   <option value="400">20x20</option>
@@ -63,7 +65,11 @@
   <option value="3600">30x120</option>
   <option value="7200">60x120</option>
   </select> 
-  </div>
+    <select id="tsize2" hidden="true">
+  <option value="size">Size</option>
+  <option value="100">10x10</option>
+  <option value="400">20x20</option>
+   </select> 
    <br>
   Unit price:<br>
   <input type="number" min="0" id="uprice" value="0">
