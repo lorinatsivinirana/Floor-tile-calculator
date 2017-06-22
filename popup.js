@@ -8,7 +8,7 @@ var tilesize2 = document.getElementById("tsize2").value;
 var unitprice = document.getElementById("uprice").value;
 
 var roomdimension = roomsizelength*roomsizewidth;
-var tilenumber = (roomdimension/(tilesize))|| roomdimension/(tilesize2);
+var tilenumber = (roomdimension/tilesize)|(roomdimension/tilesize2);
 var totalprice = tilenumber*unitprice;
 
 el1 = document.getElementById("tnumber");
@@ -17,8 +17,7 @@ el2 = document.getElementById("tprice");
 el1.innerHTML = "#Tiles: " + Math.round(tilenumber);
 el2.innerHTML = "#Price: " + Math.round(totalprice);
 
-
-	//when button is clicked, do stuff here
+//when button is clicked, do stuff here
 //window.alert(totalprice);
 };
 
@@ -27,8 +26,8 @@ if (this.value == "cm") {
 document.getElementById('tsize').hidden = false;
 document.getElementById('tsize2').hidden = true;
 } else if (this.value == "inch"){
-document.getElementById('tsize2').hidden = false;
 document.getElementById('tsize').hidden = true;
+document.getElementById('tsize2').hidden = false;
 }
 else {
 document.getElementById('tsize2').hidden = true;
