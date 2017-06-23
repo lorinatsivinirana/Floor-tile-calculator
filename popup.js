@@ -35,6 +35,11 @@ document.getElementById('tsize').hidden = true;
 }	
 };	
 
+function roomMenu(){
+	
+};
+
 document.getElementById("btnCheck").addEventListener("click",handleClick);
 document.getElementById("tunit").addEventListener("change",tileMenu);
+document.getElementById("runit").addEventListener("change",roomMenu);
 }
