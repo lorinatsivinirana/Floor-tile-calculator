@@ -26,10 +26,10 @@
 		<script src="popup.js"></script>
 	</head>
 	<body>
-	<form>
+<form id="myForm">
+<h4>Calculation</h4>	
   Room size:<br>
-    <select id="runit">
-  <option value="unit">Unit</option>
+    <select>
   <option value="cm">cm</option>
   <option value="m">m</option>
   <option value="inch">in</option>
@@ -38,7 +38,7 @@
   </select>
   <input type="number"  min="0" id="rsizel" value="length" placeholder="Enter length">
   <input type="number"  min="0" id="rsizew" value="width" placeholder="Enter width">
-  <br>
+  <br><br>
   Tile size:<br>
   <select id="tunit">
   <option value="unit">Unit</option>
@@ -46,7 +46,7 @@
   <option value="inch">in</option>
   </select>
   <select id="tsize" hidden="true">
-  <option value="size">Size</option>
+  <option value="0">Size</option>
   <option value="100">10x10</option>
   <option value="400">20x20</option>
   <option value="900">30x30</option>
@@ -66,7 +66,7 @@
   <option value="7200">60x120</option>
   </select> 
     <select id="tsize2" hidden="true">
-  <option value="size">Size</option>
+  <option value="0">Size</option>
   <option value="254">10x10</option>
   <option value="330.2">10x13</option>
   <option value="365.76">12x12</option>
@@ -91,19 +91,24 @@
   <option value="162.56">8x8</option>
   <option value="274.32">9x12</option>
    </select> 
-   <br>
+   <br><br>
   Unit price:<br>
   <input type="number" min="0" id="uprice" placeholder="Enter price">
   <br><br>
   <input type="button" id="btnCheck" value="Calculate">
+  <br>
   
+
 </form> 
-<p>Result:</p>
-<hr>
+<h4>Results:</h4>
 <div id="tnumber"></div>
 <hr>
 <div id="tprice" ></div>
+<hr>
 
 </body>
 </html>
+  
+
+
 
