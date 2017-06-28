@@ -6,8 +6,9 @@ var roomsizewidth = document.getElementById("rsizew").value;
 var tilesize = document.getElementById("tsize").value;
 var tilesize2 = document.getElementById("tsize2").value;
 var unitprice = document.getElementById("uprice").value;
+var coefficient = document.getElementById("roomSize");
 
-var roomdimension = roomsizelength*roomsizewidth;
+var roomdimension = (roomsizelength*roomsizewidth)*coefficient;
 var tilenumber = Math.round(roomdimension/tilesize)|Math.round(roomdimension/tilesize2);
 var totalprice = tilenumber*unitprice;
 
@@ -38,9 +39,27 @@ document.getElementById('tsize').hidden = true;
 
 }	
 };	
-function myFunction() {
-    document.getElementById("myForm").reset();
+function roomMenu() {
+	var coefficient;
+	switch(this.value){
+	case 1: coefficient= 1;
+    break;
+    case 2: coefficient=100;
+    break;
+    case 3: coefficient= 2.54;
+    break;	
+    case 4: coefficient=  30.48;
+    break;
+    case 5: coefficient=  91.44;
+    break;	
 }
+document.getElementById("roomSize").value=coefficient;
+};
+
 document.getElementById("btnCheck").addEventListener("click",handleClick);
 document.getElementById("tunit").addEventListener("change",tileMenu);
+document.getElementById("runit").addEventListener("change",roomMenu);
+
 }
+
+
