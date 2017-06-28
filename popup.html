@@ -8,14 +8,14 @@
 				font-size: 100%;
 			}
 
-			#quote {
+			#tnumber {
 				white-space: pre;
 				text-overflow: ellipsis;
 				max-width: 1000px;
 				word-wrap: break-word;
 
 			}
-			#author {
+			#tprice {
 				white-space: pre;
 				text-overflow: ellipsis;
 				overflow: hidden;
@@ -29,12 +29,12 @@
 <form id="myForm">
 <h4>Calculation</h4>	
   Room size:<br>
-    <select>
-  <option value="cm">cm</option>
-  <option value="m">m</option>
-  <option value="inch">in</option>
-  <option value="feet">ft</option>
-  <option value="yard">yd</option>
+    <select id="runit">
+  <option value="1">cm</option>
+  <option value="2">m</option>
+  <option value="3">in</option>
+  <option value="4">ft</option>
+  <option value="5">yd</option>
   </select>
   <input type="number"  min="0" id="rsizel" value="length" placeholder="Enter length">
   <input type="number"  min="0" id="rsizew" value="width" placeholder="Enter width">
@@ -98,14 +98,14 @@
   <input type="button" id="btnCheck" value="Calculate">
   <br>
   
-
 </form> 
 <h4>Results:</h4>
 <div id="tnumber"></div>
 <hr>
 <div id="tprice" ></div>
 <hr>
-
+<div id="roomSize" ></div>
+<hr>
 </body>
 </html>
   
