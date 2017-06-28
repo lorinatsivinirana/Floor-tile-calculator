@@ -18,8 +18,6 @@ el2 = document.getElementById("tprice");
 el1.textContent = "#Tiles: " + tilenumber;
 el2.textContent = "#Price: " + totalprice;
 
-//when button is clicked, do stuff here
-//window.alert(totalprice);
 };
 
 function tileMenu(){
