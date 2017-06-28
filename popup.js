@@ -8,7 +8,7 @@ var tilesize2 = document.getElementById("tsize2").value;
 var unitprice = document.getElementById("uprice").value;
 var coefficient = document.getElementById("runit").value;
 
-var roomdimension = (roomsizelength*roomsizewidth)*coefficient;
+var roomdimension = (roomsizelength*coefficient)*(roomsizewidth*coefficient);
 var tilenumber = Math.round(roomdimension/tilesize)|Math.round(roomdimension/tilesize2);
 var totalprice = tilenumber*unitprice;
 
