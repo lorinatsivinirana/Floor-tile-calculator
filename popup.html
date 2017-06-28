@@ -25,22 +25,22 @@
 		</style>
 		<script src="popup.js"></script>
 	</head>
-	<body style="background-color:lightcyan;LimeGreen;">
+	<body style="background-color:Azure;">
 <form id="myForm">
 <h4>Calculation</h4>	
-  Room size:<br>
+  <font color="DodgerBlue">Room size:</font><br>
   <select id="runit">
-  <option value="0">Size</option>
+  <option value="0">Unit</option>
   <option value="1">cm</option>
   <option value="100">m</option>
   <option value="2.54">in</option>
   <option value="30.48">ft</option>
   <option value="91.44">yd</option>
   </select>
-  <input type="number"  min="0" id="rsizel" value="length" placeholder="Enter length">
-  <input type="number"  min="0" id="rsizew" value="width" placeholder="Enter width">
+  <input type="number"  min="0" id="rsizel" value="length" placeholder="Enter length" style="background-color:LightYellow">
+  <input type="number"  min="0" id="rsizew" value="width" placeholder="Enter width" style="background-color:LightYellow">
   <br><br>
-  Tile size:<br>
+  <font color="DodgerBlue">Tile size:</font><br>
   <select id="tunit">
   <option value="unit">Unit</option>
   <option value="cm">cm</option>
@@ -68,33 +68,33 @@
   </select> 
     <select id="tsize2" hidden="true">
   <option value="0">Size</option>
-  <option value="254">10x10</option>
-  <option value="330.2">10x13</option>
-  <option value="365.76">12x12</option>
-  <option value="731.52">12x24</option>
-  <option value="429.26">13x13</option>
-  <option value="650.24">16x16</option>
-  <option value="734.06">17x17</option>
-  <option value="822.96">18x18</option>
-  <option value="1016">20x20</option>
-  <option value="1463.04">24x24</option>
-  <option value="10.16">2x2</option>
-  <option value="30.48">2x6</option>
-  <option value="91.44">3x12</option>
-  <option value="121.92">3x16</option>
-  <option value="45.72">3x6</option>
-  <option value="121.92">4x12</option>
-  <option value="40.60">4x4</option>
-  <option value="81.28">4x8</option>
-  <option value="365.76">6x24</option>
-  <option value="91.44">6x6</option>
-  <option value="243.84">8x12</option>
-  <option value="162.56">8x8</option>
-  <option value="274.32">9x12</option>
+  <option value="645.16">10x10</option>
+  <option value="838.708">10x13</option>
+  <option value="929.0304">12x12</option>
+  <option value="1858.0608">12x24</option>
+  <option value="1090.3204">13x13</option>
+  <option value="1651.6096">16x16</option>
+  <option value="1864.5124">17x17</option>
+  <option value="2090.3184">18x18</option>
+  <option value="2580.64">20x20</option>
+  <option value="3716.1216">24x24</option>
+  <option value="25.8064">2x2</option>
+  <option value="77.4192">2x6</option>
+  <option value="232.2576">3x12</option>
+  <option value="309.6768">3x16</option>
+  <option value="116.1288">3x6</option>
+  <option value="309.6768">4x12</option>
+  <option value="103.124">4x4</option>
+  <option value="206.4512">4x8</option>
+  <option value="929.0304">6x24</option>
+  <option value="232.2576">6x6</option>
+  <option value="619.3536">8x12</option>
+  <option value="412.9024">8x8</option>
+  <option value="696.7728">9x12</option>
    </select> 
    <br><br>
-  Unit price:<br>
-  <input type="number" min="0" id="uprice" placeholder="Enter price">
+  <font color="DodgerBlue">Unit price:</font><br>
+  <input type="number" min="0" id="uprice" placeholder="Enter price" style="background-color:LightYellow;">
   <br><br>
   <input type="button" id="btnCheck" value="Calculate">
   <br>
@@ -104,7 +104,7 @@
 <div id="tnumber"></div>
 <hr>
 <div id="tprice" ></div>
-<hr>
+<font color="DodgerBlue"><hr></font>
 
 </body>
 </html>
