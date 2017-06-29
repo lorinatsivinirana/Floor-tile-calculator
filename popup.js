@@ -17,7 +17,6 @@ el2 = document.getElementById("tprice");
 
 el1.textContent = "#Tiles: " + tilenumber;
 el2.textContent ="Price: " + totalprice;
-document.getElementById("resetbtn").addEventListener("click",myFunction);
 
 };
 
