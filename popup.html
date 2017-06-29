@@ -9,25 +9,53 @@
 			}
 
 			#tnumber {
-				white-space: pre;
-				text-overflow: ellipsis;
-				max-width: 1000px;
-				word-wrap: break-word;
+				;
 
 			}
 			#tprice {
-				white-space: pre;
-				text-overflow: ellipsis;
-				overflow: hidden;
-				max-width: 500px;
+				;
 
 			}
+			input[type=number] {
+   width:110px;
+   length:100px;
+    padding: 5px 5px;
+    margin: 2px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+	border: 1px solid #ccc;
+    border-radius: 2px;
+	    
+    
+    
+}
+input[type=button]{
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    margin: 1px 1px;
+    cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 10px 14px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
+}
+input[type=button]:active {
+  background-color: #4169E1;
+    transform: translateY(4px);
+}
+input[type=button]:hover {background-color: #4169E1}
+h3{
+    text-decoration: underline;
+    
+}
+html {width:150px;}
 		</style>
 		<script src="popup.js"></script>
 	</head>
 	<body style="background-color:Azure;">
 <form id="myForm">
-<h4>Calculation</h4>	
+<h3>Calculation</h3>	
   <font color="DodgerBlue">Room size:</font><br>
   <select id="runit">
   <option value="0">Unit</option>
@@ -97,18 +125,18 @@
   <input type="number" min="0" id="uprice" placeholder="Enter price" style="background-color:Ivory;">
   <br><br>
   <input type="button" id="btnCheck" value="Calculate">
-  <br>
-  
-</form> 
-<h4>Results:</h4>
+  <br><br>
+  <h3>Results</h3>
 <div id="tnumber"></div>
 <hr>
 <div id="tprice" ></div>
-<font color="DodgerBlue"><hr></font>
+<hr>
+
+</form> 
 
 </body>
 </html>
-  
+
 
 
 
