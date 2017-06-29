@@ -16,7 +16,8 @@ el1 = document.getElementById("tnumber");
 el2 = document.getElementById("tprice");
 
 el1.textContent = "#Tiles: " + tilenumber;
-el2.textContent = "#Price: " + totalprice;
+el2.textContent ="Price: " + totalprice;
+document.getElementById("resetbtn").addEventListener("click",myFunction);
 
 };
 
@@ -36,10 +37,12 @@ document.getElementById('tsize2').hidden = true;
 document.getElementById('tsize').hidden = true;
 
 }	
-};	
+};
+	
 
 document.getElementById("btnCheck").addEventListener("click",handleClick);
 document.getElementById("tunit").addEventListener("change",tileMenu);
+
 }
 
 
