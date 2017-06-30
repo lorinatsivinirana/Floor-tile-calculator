@@ -3,25 +3,27 @@
 	<head>
 		<title>Floor tile calculator</title>
 		<style>
-			body {
-				font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-				font-size: 100%;
-			}
-
-			input[type=number] {
-   width:105px;
-   length:100px;
+			
+			
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	font-size: 100%;
+	}
+			
+/* Set a style for all inputs */
+	input[type=number] {
+    width:105px;
+    length:100px;
     padding: 5px 5px;
     margin: 2px 0px;
     display: inline-block;
     box-sizing: border-box;
 	border: 1px solid #ccc;
-    border-radius: 2px;
-	    
-    
-    
-}
-input[type=button]{
+    border-radius: 2px;    
+    }
+
+/* Set a style for button Check */
+input[id="btnCheck"]{
     background-color: #1E90FF;
     border: none;
     color: white;
@@ -31,25 +33,38 @@ input[type=button]{
     cursor: pointer;
 	border-radius: 8px;
 	box-shadow: 0 10px 14px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
-	text-shadow:-1px 0 0 #5b6178;
-	
-	
-}
-input[type=button]:active {
-  background-color: #0b7dda;
+	text-shadow:-1px 0 0 #5b6178;	
+    }   
+input[id="btnCheck"]:active {
+    background-color: #0b7dda;
     transform: translateY(4px);
-	
-}
-input[type=button]:hover {background-color: #0b7dda;}
+    } 
+input[id="btnCheck"]:hover {
+    background-color: #0b7dda;
+    }
 
-html {
-width:123px;
-}
-#tnumber{color: #1E90FF;}
-#tprice{color:#1E90FF;}
+/* Set a style for reset button */
+input[id="btnReset"]{
+    background-color: white;
+    border: none;
+    color: Crimson;
+    padding: 5px 8px;
+    text-decoration: none;
+    margin: 1px 1px;
+    cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0 7px 10px 0 rgba(0,0,0,0.20), 0 17px 40px 0 rgba(0,0,0,0.15);
+	}
+input[id="btnReset"]:active {
+  background-color: red;
+    transform: translateY(4px)
+	}
+input[id="btnReset"]:hover {
+    background-color:red;
+    color: white;
+	}
 
-h3{text-shadow:1px 2px 0px #E6E6FA;
-}
+/* Set a style for unit select */
 select[id="runit"],[id="tunit"] {
    -webkit-appearance: button;
    -webkit-border-radius: 2px;
@@ -69,14 +84,32 @@ select[id="runit"],[id="tunit"] {
    width: 60px;
    border-radius: 6px;
    font-size: 14px;
-}
+   }
+	
+html {
+    width:123px;
+    }
+
+#tnumber{
+    color: #1E90FF;
+	}
+#tprice{
+    color:#1E90FF;
+	}
+
+h3{
+  text-shadow:1px 2px 0px #E6E6FA;
+  }
+
 select[id="tsize"],[id="tsize2"] {
-background-color: #FFFFF0;
-width:70.5px;
-}
+   background-color: #FFFFF0;
+   width:70.5px;
+   }
+
 font{ 
-font-size: 16px;}
-</style>
+   font-size: 16px;
+   }
+        </style>
 		
 	<script src="popup.js"></script>
 	</head>
@@ -158,7 +191,8 @@ font-size: 16px;}
 <hr>
 <div id="tprice"></div>
 <hr>
-
+<input type="button" id="btnReset" value="Reset">
+<br>
 </form> 
 
 </body>
