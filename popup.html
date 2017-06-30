@@ -9,7 +9,7 @@
 			}
 
 			input[type=number] {
-   width:110px;
+   width:105px;
    length:100px;
     padding: 5px 5px;
     margin: 2px 0px;
@@ -31,24 +31,54 @@ input[type=button]{
     cursor: pointer;
 	border-radius: 8px;
 	box-shadow: 0 10px 14px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
+	text-shadow:-1px 0 0 #5b6178;
+	
 	
 }
 input[type=button]:active {
-  background-color: #4169E1;
+  background-color: #0b7dda;
     transform: translateY(4px);
 	
 }
-input[type=button]:hover {background-color: #4169E1}
+input[type=button]:hover {background-color: #0b7dda;}
 
 html {
-width:141px;
+width:123px;
 }
 #tnumber{color: #1E90FF;}
 #tprice{color:#1E90FF;}
 
-
-		</style>
-		<script src="popup.js"></script>
+h3{text-shadow:1px 2px 0px #E6E6FA;
+}
+select[id="runit"],[id="tunit"] {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+     -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 20%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 1px 1px;
+   overflow: hidden;
+   padding: 2px 2px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 60px;
+   border-radius: 6px;
+   font-size: 14px;
+}
+select[id="tsize"],[id="tsize2"] {
+background-color: #FFFFF0;
+width:70.5px;
+}
+font{ 
+font-size: 16px;}
+</style>
+		
+	<script src="popup.js"></script>
 	</head>
 	<body style="background-color:Azure;">
 <form id="myForm">
@@ -126,9 +156,9 @@ width:141px;
   <h3>Results</h3>
 <div id="tnumber"></div>
 <hr>
-<div id="tprice" ></div>
+<div id="tprice"></div>
 <hr>
-<br>
+
 </form> 
 
 </body>
