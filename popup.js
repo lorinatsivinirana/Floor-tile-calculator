@@ -37,11 +37,14 @@ document.getElementById('tsize').hidden = true;
 
 }	
 };
+function resetForm(){
+	location.reload();
+};
 	
 
 document.getElementById("btnCheck").addEventListener("click",handleClick);
 document.getElementById("tunit").addEventListener("change",tileMenu);
-
+document.getElementById("btnReset").addEventListener("click",resetForm);
 }
 
 
