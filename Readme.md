@@ -1,8 +1,15 @@
 # Floor tile calculator
 
-This application calculate the number of tiles needed and price for given room dimension. 
+This application calculates the number of tiles needed and price for a given room dimension. 
 
 Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extension-used-to-calculate-the-number-of-tiles-needed-and-price-8d5c9711a436
+
+## Description
+###Floor tile calculator helps you with your tile shopping.
+
+*100% free without any adware/spyware.
+*Just enter room dimension, tile size and price.
+*FTC calculates instantly the number of tiles and the total price for a room.
 
 ## Author: Lorina Tsivinirana
 ## Download
