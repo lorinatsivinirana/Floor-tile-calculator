@@ -11,14 +11,11 @@ body {
 	}
 			
 /* Set a style for all inputs */
-	input[type=number] {
+input[type=number] {
     width:105px;
     length:100px;
     padding: 4px 4px;
-    margin: 2px 0px;
-    display: inline-block;
-    box-sizing: border-box;
-	border-radius: 0px;    
+    margin: 2px 0px; 
     }
 
 /* Set a style for button Check */
@@ -31,7 +28,7 @@ input[id="btnCheck"]{
     margin: 1px 1px;
     cursor: pointer;
 	border-radius: 8px;
-	box-shadow: 0 10px 14px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 7px 10px 0 rgba(0,0,0,0.20), 0 17px 50px 0 rgba(0,0,0,0.15);
 	text-shadow:-1px 0 0 #5b6178;	
     }   
 input[id="btnCheck"]:active {
@@ -66,9 +63,9 @@ input[id="btnReset"]:hover {
 /* Set a style for unit select */
 select[id="runit"],[id="tunit"] {
    -webkit-appearance: button;
+   -moz-appearance: none;
    -webkit-border-radius: 2px;
    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-     -webkit-user-select: none;
    background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 20%, #E5E5E5);
    background-position: 97% center;
    background-repeat: no-repeat;
@@ -78,17 +75,11 @@ select[id="runit"],[id="tunit"] {
    margin: 1px 1px;
    overflow: hidden;
    padding: 2px 2px;
-   text-overflow: ellipsis;
-   white-space: nowrap;
    width: 60px;
    border-radius: 5px;
    font-size: 14px;
-   }
+   }   
 	
-html {
-    width:123px;
-    }
-
 #tnumber{
     color: #1E90FF;
 	}
@@ -124,16 +115,16 @@ font{
   <option value="2.54">in</option>
   <option value="30.48">ft</option>
   <option value="91.44">yd</option>
-  </select>
-  <input type="number"  min="0" id="rsizel" value="length" placeholder="Enter length" style="background-color:Ivory">
-  <input type="number"  min="0" id="rsizew" value="width" placeholder="Enter width" style="background-color:Ivory">
+  </select><br>
+  <input type="number"  min="0" id="rsizel" placeholder="Length" style="background-color:Ivory"><br>
+  <input type="number"  min="0" id="rsizew" placeholder="Width" style="background-color:Ivory">
   <br><br>
   <font color="DodgerBlue">Tile size:</font><br>
   <select id="tunit">
   <option value="unit">Unit</option>
   <option value="cm">cm</option>
   <option value="inch">in</option>
-  </select>
+  </select><br>
   <select id="tsize" hidden="true">
   <option value="0">Size</option>
   <option value="100">10x10</option>
@@ -153,7 +144,7 @@ font{
   <option value="2400">20x120</option>
   <option value="3600">30x120</option>
   <option value="7200">60x120</option>
-  </select> 
+  </select><br> 
     <select id="tsize2" hidden="true">
   <option value="0">Size</option>
   <option value="645.16">10x10</option>
@@ -180,12 +171,12 @@ font{
   <option value="412.9024">8x8</option>
   <option value="696.7728">9x12</option>
    </select> 
-   <br><br>
-  <font color="DodgerBlue">Unit price:</font><br>
-  <input type="number" min="0" id="uprice" placeholder="Enter price" style="background-color:Ivory;">
+   
+ <font color="DodgerBlue">Unit price:</font><br>
+  <input type="number" min="0" id="uprice" placeholder="Price" style="background-color:Ivory;">
   <br><br>
   <input type="button" id="btnCheck" value="Calculate">
-  <br><br>
+  <br>
   <h3>Results</h3>
 <div id="tnumber"></div>
 <hr>
