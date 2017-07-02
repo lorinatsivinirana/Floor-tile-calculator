@@ -22,7 +22,7 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 * Change the logo to have a synergy with the color of the extension
 
 ### 1.4.0 release - Reworked calculation
-* Modofied the room dimension calculation
+* Modified the room dimension calculation
 * Added the coefficients values for each unit to convert the room dimension values to cm
 
 ### 1.3.0 release - Fixed a bug with tile number
