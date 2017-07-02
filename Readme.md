@@ -12,7 +12,7 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 
 ## Changelog
 ### 1.5.2- Fixed a bug with GUI
-*Fixed a bug with FTC GUI layout not showing up on firefox
+* Fixed a bug with FTC GUI layout not showing up on firefox
 
 ### 1.5.1 release - Reworking with the GUI
 * Added css styles
