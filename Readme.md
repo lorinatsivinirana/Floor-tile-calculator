@@ -17,7 +17,7 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 ## Download
 ### Firefox: https://addons.mozilla.org/en-US/firefox/addon/floor-tile-calculator/
 ### Chrome: 
-### Opera: 
+### Opera: https://addons.opera.com/fr/extensions/details/floor-tile-calculator/
 
 ## Changelog
 ### 1.5.2 release - Fixed a bug with GUI
