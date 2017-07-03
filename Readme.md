@@ -8,7 +8,7 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 #### Floor tile calculator is your premier companion in your floor tile shopping.
 
 * Quickly and easily calculate the number of tiles needed to cover a particular area.
-* Estimate the price based on a total price.
+* Estimate the total price based on a tile's unit price.
 * Intelligent algorithm converts between units automatically!
 * Area to cover in yards,feet,inches,m and cm.
 * Tile dimension in cm or inches.
