@@ -15,7 +15,7 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 
 ## Author: Lorina Tsivinirana
 ## Download
-### Firefox: 
+### Firefox: https://addons.mozilla.org/en-US/firefox/addon/floor-tile-calculator/
 ### Chrome: 
 ### Opera: 
 
@@ -26,7 +26,7 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 ### 1.5.1 release - Reworking with the GUI
 * Added css styles
 
-### 1.5.0 release - Modofied logo
+### 1.5.0 release - Modified logo
 * Adding Extension Color Background
 * Change the logo to have a synergy with the color of the extension
 
