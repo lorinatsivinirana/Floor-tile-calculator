@@ -16,10 +16,11 @@ Official Page: https://medium.com/@LorX/floor-tile-calculator-a-browser-extensio
 ## Author: Lorina Tsivinirana
 ## Download
 ### Firefox: https://addons.mozilla.org/en-US/firefox/addon/floor-tile-calculator/
-### Chrome: 
+### Chrome: https://chrome.google.com/webstore/detail/floor-tile-calculator/ihafjbnnbfgfkkldcddnlmgbikfgpnco
 ### Opera: https://addons.opera.com/fr/extensions/details/floor-tile-calculator/
 
 ## Changelog
+### 1.6.0 release - Validation
 ### 1.5.2 release - Fixed a bug with GUI
 * Fixed a bug with FTC GUI layout not showing up on firefox
 
